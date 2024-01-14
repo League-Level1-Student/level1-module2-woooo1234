@@ -17,13 +17,14 @@ public class SeaCreature {
 
 	SeaCreature(String name) {
 		this.name = name;
+		
 	}
 
 	public String getName() {
 		return "My name is " + name;
 	}
 
-	public void eat() {
+	public void eat() { 
 		System.out.println(name + " is eating krabby patties");
 	}
 

@@ -5,9 +5,16 @@ package _03_tea_maker;
  */
 
 public class TeaMaker {
-
+	public static void main(String[] args) {
+		Cup cup = new Cup();
+		TeaBag bag = new TeaBag("Mint");
+		Kettle ket = new Kettle();
+		ket.boil();
+		cup.makeTea(bag, ket.getWater());
+		
+	}
 	/* Figure out how to make a cup of tea in this runner class, using the other classes below */
-
+	
 }
 
 class TeaBag {
@@ -30,7 +37,6 @@ class TeaBag {
 }
 
 class Kettle {
-
 	private Water water = new Water();
 
 	Water getWater() {
